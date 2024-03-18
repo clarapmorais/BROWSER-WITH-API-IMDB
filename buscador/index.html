@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- FavIcon-->
+  <link rel="icon" href="https://www.pngall.com/wp-content/uploads/15/Film-Camera-PNG-File.png" type="image/x-icon">
+  <title>Flic</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+
+  
+    <header>
+
+
+        <div class="col-sm-4" id="menu">
+          <h1 class="fliclogo">  Flic </h1>
+          <span>Films</span>
+          <span>Series</span>
+          <span>Favorites</span>
+        </div>
+        <form id="formSearch">
+          <input type="search" id="search" class="search" placeholder="Search" style="border-color: transparent !important; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);">
+        </form>    
+    </header>
+
+
+
+    <div class="row" style="display: flex;">
+      <div class="scroll-arrow left" onclick="scrollOptions('left')"><div class="seta">&#9664;</div></div>
+      <div class="filter">
+          <div class="col-sm">
+            <div id="options-menu">
+              <div class="option" id="popular">Popular</div>
+              <div class="option" id="recently-added">Recently Added</div>
+              <div class="option" id="action">Action</div>
+              <div class="option" id="animation">Animation</div>
+              <div class="option" id="adventure">Adventure</div>
+              <div class="option" id="comedy">Comedy</div>
+              <div class="option" id="documentary">Documentary</div>
+              <div class="option" id="drama">Drama</div>
+              <div class="option" id="fantasy">Fantasy</div>
+              <div class="option" id="science-fiction">Science Fiction</div>
+              <div class="option" id="musical">Musical</div>
+              <div class="option" id="romance">Romance</div>
+              <div class="option" id="horror">Horror</div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="scroll-arrow right" onclick="scrollOptions('right')"><div class="seta">&#9654; </div></div>
+  </div>
+  
+  <div class="pageButtons"> 
+    <div class="pageButton" id="afterButton"> </div>
+    <div class="pageButton" id="buttonNumber"></div>
+    <div class="pageButton" id="nextButton"> </div>
+
+   <!--  <div class="pageButton" id="afterButton"> Anterior </div>
+    <div class="pageButton" id="buttonNumber"></div>
+    <div class="pageButton" id="nextButton"> Próxima  </div> -->
+  </div>
+
+    <div id="page-menu">   
+    </div>
+  
+    <main id="main"></main>
+    <script src="script.js"></script>
+
+</body>
+</html>
